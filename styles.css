@@ -60,6 +60,7 @@ label{
     width:50vw;
     margin: 20%;
     margin-top: 0%;
+    height:20vh;
 }
 .link{
 background-color: blue;
@@ -68,8 +69,10 @@ text-decoration: none;
 width: max-content;
 border :1px solid black;
 border-radius: 0.5rem;
+
 }
 .footer{
     font-size: larger;
     color: turquoise;
+
 }
