@@ -9,7 +9,7 @@ var notesList=[2000,500,200,100,20,10,1];
 buttonCheck.addEventListener("click", function checkHandler(){
     message.style.display = "none";
     if(billAmount.value > 0 ){
-        if(cashGiven.value >= billAmount.value){
+        if(cashGiven.value >billAmount.value){
             var calculatedAmount=cashGiven.value -billAmount.value;
             for( let i=0;i<notesList.length;i++){
                 var noOfNotes=Math.trunc(calculatedAmount/notesList[i]);
