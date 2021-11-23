@@ -9,7 +9,7 @@ var notesList=[2000,500,200,100,20,10,1];
 buttonCheck.addEventListener("click", function checkHandler(){
     message.style.display = "none";
     if(billAmount.value > 0 ){
-        if(cashGiven.value >billAmount.value){
+        if(cashGiven.value > billAmount.value){
             var calculatedAmount=cashGiven.value -billAmount.value;
             for( let i=0;i<notesList.length;i++){
                 var noOfNotes=Math.trunc(calculatedAmount/notesList[i]);
@@ -17,7 +17,13 @@ buttonCheck.addEventListener("click", function checkHandler(){
                 notes[i].innerText = noOfNotes;
             }
 
-        }else{
+        }
+        else if (cashGiven.value==billAmount.value) {
+            mes="You have paid exact bill amount!";
+            errorMessage(mes);
+        } 
+        else {
+                  
             mes="Given amount is less than bill amount!!";
             errorMessage(mes);
         }
