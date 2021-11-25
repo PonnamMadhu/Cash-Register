@@ -1,7 +1,7 @@
 .container{
 display: flex;
 flex-direction: column;
-width: 50vw;
+width: 60%;
 text-align: center;
 margin-left: 20%;
 background-color: #243B55;
@@ -38,6 +38,8 @@ input{
     color: turquoise;
 }
 table{
+    width: 95%;
+    align-self: center;
     margin-bottom: 1rem;
     border-collapse: collapse;
 }
@@ -57,7 +59,7 @@ label{
     color: lightslategray;
     text-align: center;
     background-color: #243B55;
-    width:50vw;
+    width:60%;
     margin: 20%;
     margin-top: 0%;
     height:20vh;
